@@ -12,8 +12,9 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
-
 .cabecalho {
     padding: 24px;
     background-color: #ffffff;
@@ -33,14 +34,15 @@ img {
 
 .navegacao {
     margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
 }
 
 .navegacao a {
     display: block;
     padding: 8px 0;
-    color: #475569;
-    font-weight: 600;
-    text-decoration: none;
 }
 
 .conteudo {
@@ -82,8 +84,7 @@ img {
 }
 
 .apresentacao-imagem img {
-    width: 100%;
-    border-radius: 12px;
+    
 }
 
 .secao {
@@ -97,6 +98,10 @@ img {
 
 .cards {
     display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
     gap: 20px;
 }
 
