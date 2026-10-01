@@ -106,10 +106,17 @@ img {
 }
 
 .card {
-    padding: 24px;
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+@media (min-width: 800px) {
+
+    .card {
+        padding: 28px;
+    }
+
 }
 
 .card h3 {
@@ -143,25 +150,34 @@ img {
     color: #64748b;
 }
 
-@media (min-width: 700px) {
+.titulo {
+    font-size: 28px;
+}
 
-    body {
-        background-color: #e8eefc;
+.lista {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+
+    .lista {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1000px) {
 
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 32px;
+    .titulo {
+        font-size: 40px;
     }
 
-    .navegacao {
-        margin-top: 0;
+}
+
+@media (min-width: 700px) {
+
+    body {
+        background-color: #e8eefc;
     }
 
 }
@@ -190,10 +206,6 @@ img {
         margin-top: 0;
     }
 
-    .exemplo-conteudo {
-    grid-template-columns: 2fr 1fr;
-    }
-
 }
 
 @media (min-width: 1000px) {
@@ -208,22 +220,6 @@ img {
 
     .secao {
         padding: 64px 0;
-    }
-
-}
-
-@media (min-width: 1000px) {
-
-    .titulo {
-        font-size: 40px;
-    }
-
-}
-
-@media (min-width: 800px) {
-
-    .card {
-        padding: 28px;
     }
 
 }
